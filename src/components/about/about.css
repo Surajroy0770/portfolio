@@ -36,7 +36,7 @@
 }
 .about_artical:hover{
     background: transparent;
-    border-radius: var(--color-primary-variant);
+    border-color: var(--color-bg-variant);
     cursor: default;
 }
 
@@ -54,7 +54,7 @@
 }
 .about_right p{
     font-size: 0.8rem;
-    margin: 2rem 0 2rem;
+    margin: 2rem 0 1rem 0;
     color: var(--color-light);
 }
 

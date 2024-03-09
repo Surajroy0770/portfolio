@@ -14,7 +14,7 @@ function Nav() {
       <a href="#home" onClick={()=>setnavactive("#home")} className={navactive==="#home" ? "active" :" "} ><FaHome /></a>
       <a href="#about" onClick={()=>setnavactive("#about")} className={navactive==="#about" ? "active" :" "}><FaRegUser /></a>
       <a href="#skill" onClick={()=>setnavactive("#skill")} className={navactive==="#skill" ? "active" :" "}><RiBookLine /></a>
-      <a href="#service" onClick={()=>setnavactive("#service")} className={navactive==="#service" ? "active" :" "}><RiServiceLine /></a>
+      <a href="#project" onClick={()=>setnavactive("#project")} className={navactive==="#project" ? "active" :" "}><RiServiceLine /></a>
       <a href="#contact" onClick={()=>setnavactive("#contact")} className={navactive==="#contact" ? "active" :" "}><TiContacts /></a>
     </nav>
   )

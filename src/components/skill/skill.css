@@ -1,0 +1,45 @@
+.container_skill{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 2rem;
+}
+.frontend,.backend{
+    background: var(--color-bg-variant);
+    padding: 2.4rem 5rem;
+    border-radius: 2rem;
+    border: 1px solid transparent;
+    transition: var(--transition);
+}
+.frontend:hover,.backend:hover{
+    background: transparent;
+    background-color: var(--color-primary-variant);
+    cursor: default;
+
+}
+.frontend h3, .backend h3{
+    text-align: center;
+    color: var(--color-primary);
+}
+.skill_content{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    row-gap: 2rem;
+    padding: 2rem 0;
+
+}
+.skill_details{
+    display: flex;
+    gap: 1rem;
+    align-items: center; 
+}
+
+@media screen and (max-width:600px){
+    .container_skill{
+        grid-template-columns: 1fr;
+    }
+    .container_skill>div{
+        width: 95%;
+        padding: 1rem;
+        margin: 0 auto;
+    }
+}
