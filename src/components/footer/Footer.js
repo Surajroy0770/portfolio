@@ -19,7 +19,7 @@ function Footer() {
         <a href="http://Twitter.com"><FaTwitter/></a>
       </div>
       <div className="footer_copyright">
-        <small>&copy; Portfolio. All rights sercices</small>
+        <small>&copy; Portfolio. All rights services</small>
       </div>
     </footer>
   )
