@@ -2,10 +2,12 @@ import CTA from './CTA'
 import './header.css'
 import img from '../../assets/suraj1.png'
 import HeaderSocial from './HeaderSocial'
+import LogIn from './LogIn'
 
 function Header() {
   return (
     <header id='home'>
+      <LogIn/>
       <div className="container header__container">
         <div className="left">
           <h5>Hello, I'm</h5>

@@ -6,6 +6,8 @@ import Skill from './components/skill/Skill'
 import Contact from './components/contact/Contact'
 import Footer from './components/footer/Footer'
 import Project from './components/project/Project';
+
+
 function App() {
   return (
    <>
@@ -16,7 +18,7 @@ function App() {
    <Project/>
    <Contact/>
    <Footer/>
-   
+  
    </>
   );
 }

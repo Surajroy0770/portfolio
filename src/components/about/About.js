@@ -19,12 +19,12 @@ function About() {
             <article className='about_artical'>
               <FaAward className='about_icon' />
               <h5>Experince</h5>
-              <small> Fresher</small>
+              <small> 1+ Years</small>
             </article>
             <article className='about_artical'>
               <VscFolderLibrary className='about_icon' />
               <h5>Projects</h5>
-              <small> 10+ completed</small>
+              <small> 10+ Project completed</small>
             </article>
           </div>
           <p>To Secure a Challenging Position Where I can effectively contribute my Skills as software professional for growth of

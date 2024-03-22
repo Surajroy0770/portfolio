@@ -1,6 +1,6 @@
 header{
     height: 100vh;
-    padding-top: 7rem;
+    padding-top: 2rem;
     overflow: hidden;
     padding-bottom: 10rem;
 }
@@ -78,7 +78,7 @@ header{
 /* ============= Small Devices ================= */
 @media screen and (max-width:600px) {
     .header__container{
-        margin: 6rem auto;
+        margin: 8rem auto;
     }
     .me{
         width: 17rem;

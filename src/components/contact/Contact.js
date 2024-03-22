@@ -3,10 +3,17 @@ import { MdEmail } from "react-icons/md";
 import { FaWhatsapp } from "react-icons/fa";
 import React, { useRef } from 'react';
 import emailjs from '@emailjs/browser';
+import { ToastContainer, toast } from 'react-toastify';
+import 'react-toastify/dist/ReactToastify.css';
 
 
 function Contact() {
   const form = useRef();
+
+
+  const notify = () => toast.success("Send Successfully",{
+    autoClose:2000
+  });
 
   const sendEmail = (e) => {
     e.preventDefault();
@@ -27,32 +34,35 @@ function Contact() {
   };
 
   return (
-    <section id='contact'>
-      <h5>Get In Touch</h5>
-      <h2>Contact Me</h2>
-      <div className="container container_content">
-        <div className="contact_details">
-          <article className='contact_detail'>
-            <MdEmail className='icon' />
-            <h4>Email</h4>
-            <h5>surajroy0770@gmail.com</h5>
-            <a href="mailto:surajroy0770@gmail.com" target="_blank" rel="noreferrer">Send Me Message</a>
-          </article>
-          <article className='contact_detail'>
-            <FaWhatsapp className='icon' />
-            <h4>WhatsApp</h4>
-            <h5>+916398629809</h5>
-            <a href="https://api.whatsapp.com/send?phone=+916398629809" target="_blank" rel="noreferrer">Send Me Message</a>
-          </article>
+    <>
+      <section id='contact'>
+        <h5>Get In Touch</h5>
+        <h2>Contact Me</h2>
+        <div className="container container_content">
+          <div className="contact_details">
+            <article className='contact_detail'>
+              <MdEmail className='icon' />
+              <h4>Email</h4>
+              <h5>surajroy0770@gmail.com</h5>
+              <a href="mailto:surajroy0770@gmail.com" target="_blank" rel="noreferrer">Send Me Message</a>
+            </article>
+            <article className='contact_detail'>
+              <FaWhatsapp className='icon' />
+              <h4>WhatsApp</h4>
+              <h5>+916398629809</h5>
+              <a href="https://api.whatsapp.com/send?phone=+916398629809" target="_blank" rel="noreferrer">Send Me Message</a>
+            </article>
+          </div>
+          <form ref={form} onSubmit={sendEmail}>
+            <input type="text" name="name" placeholder="Enter Your name" required />
+            <input type="email" name="email" placeholder="Enter your email" required />
+            <textarea name="message" rows="10" placeholder="Enter message" required></textarea>
+            <button type="submit" onClick={notify} className="btn btn-primary">Send Message</button>
+          </form>
         </div>
-        <form ref={form} onSubmit={sendEmail}>
-          <input type="text" name="name" placeholder="Enter Your name" required />
-          <input type="email" name="email" placeholder="Enter your email" required />
-          <textarea name="message" rows="10" placeholder="Enter message" required></textarea>
-          <button type="submit" className="btn btn-primary">Send Message</button>
-        </form>
-      </div>
-    </section>
+      </section>
+      <ToastContainer />
+    </>
   )
 }
 
