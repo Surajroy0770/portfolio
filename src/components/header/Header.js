@@ -7,7 +7,7 @@ import LogIn from './LogIn'
 function Header() {
   return (
     <header id='home'>
-      <LogIn/>
+      {/* <LogIn/> */}
       <div className="container header__container">
         <div className="left">
           <h5>Hello, I'm</h5>
@@ -15,7 +15,7 @@ function Header() {
           <h5 className='text-light'>Fullstack Developer</h5>
           <CTA />
           <HeaderSocial />
-        </div>
+        </div>s
         <div className="rigth">
           <div className="me">
             <img src={img} alt="" className='su'/>
