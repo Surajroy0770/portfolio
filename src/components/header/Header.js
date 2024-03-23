@@ -2,7 +2,7 @@ import CTA from './CTA'
 import './header.css'
 import img from '../../assets/suraj1.png'
 import HeaderSocial from './HeaderSocial'
-import LogIn from './LogIn'
+// import LogIn from './LogIn'
 
 function Header() {
   return (
@@ -15,7 +15,7 @@ function Header() {
           <h5 className='text-light'>Fullstack Developer</h5>
           <CTA />
           <HeaderSocial />
-        </div>s
+        </div>
         <div className="rigth">
           <div className="me">
             <img src={img} alt="" className='su'/>
